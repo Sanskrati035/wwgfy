@@ -7,7 +7,7 @@ A full-stack decision-support web app for a UK energy utility's **day-ahead powe
 
 Scope: purchase decisions made in **January 2026** → delivery days **2 Jan – 1 Feb 2026**.
 
-- **Live app:** `https://wwgfy-omega.vercel.app/`
+- **Live app:** `https://wwgfy-c1f7p8wf3-abc-3421.vercel.app/`
 
 ## Features
 - **Decision-time forecast:** for each half-hour, the forecast run with the latest `publishTime` ≤ gate closure (default 09:20 UK on D−1, editable). Later runs are excluded — no hindsight bias.
