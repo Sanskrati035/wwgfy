@@ -8,7 +8,6 @@ A full-stack decision-support web app for a UK energy utility's **day-ahead powe
 Scope: purchase decisions made in **January 2026** → delivery days **2 Jan – 1 Feb 2026**.
 
 - **Live app:** `<paste your Vercel URL here>`
-- **AI disclosure:** this project was built with the assistance of Claude (Anthropic). I reviewed, tested and take responsibility for the code.
 
 ## Features
 - **Decision-time forecast:** for each half-hour, the forecast run with the latest `publishTime` ≤ gate closure (default 09:20 UK on D−1, editable). Later runs are excluded — no hindsight bias.
