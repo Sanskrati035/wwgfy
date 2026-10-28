@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      ALLOW_SYNTHETIC: "1"   # set to 0 once backend/data/wind_snapshot.json.gz is present
+  # One-off helper to download the real Elexon data into backend/data/:
+  #   docker compose run --rm fetch
+  fetch:
+    build: .
+    profiles: ["tools"]
+    command: ["python", "-m", "scripts.fetch_data"]
+    volumes: ["./backend/data:/srv/backend/data"]
